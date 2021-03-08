@@ -1,0 +1,127 @@
+.header {
+    padding: 43px 0 12px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: #EFF3F9;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-right: 45px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #4F4F4F;
+}
+
+.search {
+    width: 153px;
+    height: 32px;
+    margin-right: 24.9px;
+    padding-left: 35px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #979797;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    background: url(/src/images/icons/magnifier.png) no-repeat 18px #FDFDFF;
+}
+
+.ring {
+    width: 22px;
+    height: 22px;
+    background-image: url(/src/images/icons/ring.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ring:hover {
+    cursor: pointer;
+}
+
+.right-part {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 11px;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/src/images/icons/avatar-Anya.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.name {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.arrow {
+    position: relative;
+    font-size: 4px;
+    margin-left: 15px;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #5B5B5B;
+    border-bottom: 2px solid #5B5B5B;
+    transform: rotate(45deg);
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 5px;
+    right: 5px; 
+    display: none;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    z-index: 10;
+}
+
+.burger-menu::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+}
+
+.burger-menu::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+}
+

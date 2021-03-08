@@ -1,0 +1,120 @@
+@media screen and (max-width: 1080px) {
+    .app {
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    
+    .audience__title,
+    .card__title,
+    .gender__title,
+    .geo__title,
+    .reach__title {
+        font-size: 15px;
+    }
+    
+    .card__text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .card__numbers {
+        font-size: 12px;
+    }
+
+    .dots, 
+    .dots::after,
+    .dots::before {
+        width: 3px;
+        height: 3px;
+    }
+
+    .header {
+        height: 30px;
+        padding-top: 30px;
+    }
+
+    .reach {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 136px 20px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+        'title-reach'
+        'img-reach'
+        'reach-legend';
+    }
+    
+    .reach__title {
+        grid-area: title-reach;
+        margin: 5px auto 0;
+
+    }
+
+    .reach__img {
+        grid-area: img-reach;
+        margin: 0 auto 0;
+    }
+
+    .reach__legend {
+        grid-area: reach-legend;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img__square-lavander {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .audience__date {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app {
+      grid-gap: 10px;
+      grid-template-rows: 80px repeat(3, 110px) repeat(4, 250px);
+      grid-template-columns: 100vw;
+      grid-template-areas:
+      "header"
+      "card-1"
+      "card-2"
+      "card-3"
+      "audience"
+      "reach"
+      "gender"
+      "geo";
+    }
+    
+    .ring,
+    .avatar,
+    .arrow {
+       display: none;
+    }
+
+    .title {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .search {
+        width: 70px;
+    }
+
+    .name {
+        margin-right: 25px;
+        font-size: 15px;
+    }
+
+    .audience__date {
+        display: none;
+    }
+
+  }

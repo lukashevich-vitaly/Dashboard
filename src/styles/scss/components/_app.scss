@@ -1,0 +1,40 @@
+.app {
+    background: #EFF3F9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 105px 148px repeat(2, 1fr);
+    grid-row: max(242px);
+    grid-gap: 32px;
+    width: 100%;
+    padding: 0 50px 50px;
+    grid-auto-flow: row dense;
+    grid-template-areas: 
+    'header header header'
+    'card-1 card-2 card-3'
+    'audience audience reach'
+    'gender gender geo';
+}
+
+.header { 
+    grid-area: header;
+}
+
+.card {
+    grid-area: card-1, card-2, card-3;
+}
+
+.audience {
+    grid-area: audience;
+}
+
+.reach {
+    grid-area: reach;
+}
+
+.gender {
+    grid-area: gender;
+}
+
+.geo {
+    grid-area: geo;
+}

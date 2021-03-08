@@ -1,0 +1,49 @@
+.reach {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 54px 1fr;
+    grid-row-gap: 40px;
+    border-radius: 13px;
+    background: #FDFDFF;
+}
+
+.reach__title {
+    grid-column: 1 / span 2;
+    margin: 23px 0 0 24px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+    color: #4F4F4F;
+}
+
+.reach__img {
+    margin-left: 23px;
+}
+
+.reach__square {
+    display: flex;
+}
+
+.reach__text {
+    margin: 0 0 11px 5px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}
+
+.img__square-pink,
+.img__square-lavander {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+

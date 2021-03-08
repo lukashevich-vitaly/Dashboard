@@ -1,0 +1,131 @@
+.nav {
+    display: grid;
+    grid-template-columns: 98px;
+    grid-template-rows: 1fr repeat(7, 80px) 1fr;
+    min-height: 880px;
+    width: 98px;
+    background-color: #FDFDFF;
+}
+
+.logo {
+    width: 51px;
+    height: 35px;
+}
+
+.nav__link:first-child:hover {
+    .logo {
+    width: 60px;
+    height: 40px;
+    }
+}
+
+.nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.nav__link:first-child,
+.nav__link:last-child {
+    height: 80px;
+    width: 100%;
+}
+
+.nav__link:first-child {
+    margin-top: 30px;
+}
+
+.nav__link:last-child {
+    align-self: flex-end;
+}
+
+svg {
+    fill: #DFE6F1;
+    transition: fill ease .5s;
+}
+
+.nav__link:before {
+    visibility: hidden;
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background-color: #7F7FD5;
+    border-radius: 0 5px 5px 0;
+    transition: all ease .5s;
+}
+
+.nav__link:first-child:before,
+.nav__link:last-child:before {
+    width: 0;
+}
+
+.nav__link:hover:before {
+    visibility: visible;
+    opacity: 1;
+    background-color: #7F7FD5;
+}
+
+.nav__link:hover svg {
+    fill:#7F7FD5;
+}
+
+input[type='checkbox'] {
+    visibility: hidden;
+    display: none;
+}
+
+.check {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background:#FDFDFF;
+    cursor: pointer;
+    border: solid 1px #4F4F4F;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: ease-in .6s;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    background: url(/src/images/icons/half-moon.png) no-repeat center #7F7FD5;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: .6s;
+}
+
+input[type='checkbox']:checked ~ .check:before {
+    transform: translateX(-25px);
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    background: url(/src/images/icons/circle.png) no-repeat center #E9E9E9;
+    background-color: #E9E9E9;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: .6s;
+    transform: translateX(25px);
+}
+
+input[type='checkbox']:checked ~ .check:after {
+    transform: translateX(0px);
+}
+

@@ -1,0 +1,67 @@
+.audience {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+    border: 1px solid #EBEBEB;
+    border-radius: 13px;
+    background: #FDFDFF;
+}
+
+.audience__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.audience__title {
+    margin: 23px 0 0 24px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+    color: #4F4F4F;
+}
+
+.audience__form {
+    margin-right: 37px;
+}
+
+.img__graf-audience {
+    width: 100%;
+    height: 100%;
+}
+
+.audience__date {
+    margin: 30px 24px 0 0;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}
+
+.checkbox {
+    display: flex;
+    margin-top: 25px;
+}
+
+.audience__text {
+    margin: 0 20px 0 6px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}
+
+.img__check,
+.img__nocheck {
+    width: 16px;
+    height: 16px;
+}
+
+
+
